@@ -54,7 +54,8 @@ The **body** tag is where all our visible content goes inside
 Putting it all together it look like this:
 
 ```
-<html>
+<!Doctype html>
+<html lang="en">
 
   <head>
     <title>Demo website</title>
