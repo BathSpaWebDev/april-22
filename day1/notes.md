@@ -105,7 +105,7 @@ The p tag means it is a paragraph. Every p tag will start on a new line and by d
 ## strong vs b tag
 This makes the text bold.
 
-The <strong> element is for content that is of greater importance, while the <b> element is used to draw attention to text without indicating that it's more important.
+The `<strong>` element is for content that is of greater importance, while the `<b>` element is used to draw attention to text without indicating that it's more important.
 
 ## Lists
 There are two types of list, ordered lists and unordered list. Ordered lists by default have a number on each list item. The syntax is like so:
