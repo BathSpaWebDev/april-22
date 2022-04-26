@@ -1,0 +1,24 @@
+.top-section {
+    margin: 100px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.special-style {
+    background-color: blue;
+    color: #fff;
+}
+
+section.special-style p {
+    font-size: 2rem;
+}
+
+.square {
+    width: 400px;
+    height: 400px;
+    /* background-color: black; */
+}
+
+.feature-image {
+    width: 200px;
+}
