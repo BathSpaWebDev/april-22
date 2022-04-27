@@ -1,14 +1,3 @@
-.social {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 2rem;
-}
-
-.social a {
-    color: #fff;
-}
-
 .demo {
     /* There are various different types of position that you can apply to an elemnt */
     /*
