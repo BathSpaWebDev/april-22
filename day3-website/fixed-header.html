@@ -10,10 +10,13 @@
         #fixed-header {
             /*fixed positioned elements are positioned relative to the viewport*/
             position: fixed;
+            display: flex;
+            justify-content: space-between;
             left: 0;
             top: 0;
             width: 100%;
             background: #000;
+            color: #fff
         }
         
         #fixed-header a {
@@ -30,13 +33,35 @@
         article p {
             font-size: 1.4rem;
         }
+        
+        body {
+            padding: 100px;
+        }
+        
+        .para span {
+            color: crimson;
+            border: 1px solid;
+            padding: 10px;
+        }
+        
+        .para.blue {
+            color: blue;
+        }
     </style>
 </head>
 
 <body>
 
+    <p class="para">
+        <span>Lorem ipsum</span> dolor sit amet consectetur.
+    </p>
+
+    <p class="para blue">
+        Lorem ipsum dolor sit amet consectetur.
+    </p>
+
     <header id="fixed-header">
-        <div class="logo"></div>
+        <div class="logo">Logo</div>
         <nav>
             <ul>
                 <li><a href="">One</a></li>
