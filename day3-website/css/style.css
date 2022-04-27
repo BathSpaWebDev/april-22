@@ -1,0 +1,42 @@
+body {}
+
+.hero {
+    width: 100%;
+    height: 25vh;
+    background-color: grey;
+    position: relative;
+}
+
+.social {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 2rem;
+}
+
+.social a {
+    color: #fff;
+}
+
+.demo {
+    /* There are various different types of position that you can apply to an elemnt */
+    /*
+ static,
+ relative,
+ absolute,
+ fixed
+ */
+    position: relative;
+}
+
+.block {
+    height: 100px;
+    background-color: aquamarine;
+    border: 1px solid #000;
+    margin-bottom: 40px;
+}
+
+.xyz {
+    background-color: blue;
+    position: relative;
+}
