@@ -219,5 +219,6 @@ https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e
 
 2. Create an image which has some text that slides in using css translate. You can copy from the code in the "transform-demo" folder.
 
-3. Complete this quiz on HTML (please complete before end of the week).
+3. Complete this quiz on HTML (please complete before end of the week). 
+https://docs.google.com/forms/d/1NrX9a8qPsklmeYy7Go9psC53o4zHD7dMfnpGdAOVvnI/edit
 
