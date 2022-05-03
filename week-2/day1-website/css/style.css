@@ -1,0 +1,25 @@
+.flex-container {
+    /* THIS MAKES IT A FLEX CONTAINER */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    height: 12rem;
+    /* px, rem */
+    border: 1px solid red;
+    flex-wrap: wrap;
+}
+
+.item {
+    padding: 0 100px;
+    border: 1px solid green;
+}
+
+.item.last-item {
+    display: flex;
+    flex-direction: column;
+    /* width: 200px; */
+    background-color: turquoise;
+    /* flex-grow: 2; */
+}
