@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza palace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            Logo
+        </div>
+
+        <svg onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" id="menu-toggle" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+
+
+        <div class="mobile-nav-container" id="js-nav">
+            <nav class="mobile-nav">
+                <div class="main-nav__menu-item first-div"><a href="index.html">Home</a></div>
+                <div class="main-nav__menu-item"><a href="index.html">About</a></div>
+                <div class="main-nav__menu-item"><a href="index.html">Menu</a></div>
+                <div class="main-nav__menu-item"><a href="index.html">Contact</a></div>
+            </nav>
+        </div>
+
+        <nav class="main-nav">
+            <div class="main-nav__menu-item first-div"><a href="index.html">Home</a></div>
+            <div class="main-nav__menu-item"><a href="index.html">About</a></div>
+            <div class="main-nav__menu-item"><a href="index.html">Menu</a></div>
+            <div class="main-nav__menu-item"><a href="index.html">Contact</a></div>
+        </nav>
+    </header>
+
+
+    <script>
+        function toggleMenu() {
+            // console.log('worked');
+            const toggleButton = document.getElementById('menu-toggle');
+            const mobileNavContainer = document.getElementById('js-nav');
+            console.log(mobileNavContainer);
+            if (!mobileNavContainer.classList.contains('active')) {
+                // if does not have the class "active" then add it
+                mobileNavContainer.classList.add('active');
+
+            } else {
+                // if it does have the class then remove it
+                mobileNavContainer.classList.remove('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
