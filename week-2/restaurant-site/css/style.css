@@ -2,6 +2,15 @@ body {
     margin: 0;
 }
 
+html {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+
+/* header.page-header {
+    height: 100px;
+} */
+
 .logo {
     display: flex;
     justify-content: center;
@@ -11,7 +20,7 @@ body {
 /* NAVIGATION */
 
 
-/* Mobile */
+/* Mobile menu */
 
 .mobile-nav-container {
     display: none;
@@ -29,7 +38,7 @@ body {
 }
 
 
-/* Desktop */
+/* Desktop menu */
 
 .main-nav {
     display: none;
@@ -41,7 +50,31 @@ body {
 
 .main-nav__menu-item a {
     font-size: 1.2rem;
-    font-family: 'Libre Franklin', sans-serif;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: #f6f6f6;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero__inner {
+    color: #fff;
+}
+
+
+/* ABOUT SECTION */
+
+.about__image {
+    background-color: grey;
 }
 
 @media only screen and (min-width: 768px) {
