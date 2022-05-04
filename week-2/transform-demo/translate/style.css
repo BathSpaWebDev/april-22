@@ -7,17 +7,44 @@
     background-image: url(../images/test-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 20px;
 }
 
-.box {
+.container .box {
     height: 100%;
     width: 100%;
     background-color: red;
     transition: transform 0.5s linear;
-    transform: translateX(-100%);
+    transform: translateY(-100%);
     padding: 1rem;
 }
 
 .container:hover .box {
     transform: translateX(0);
+}
+
+
+/* scale */
+
+.container--scale {
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-image: url(../images/test-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container--scale img {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s linear;
+    transform: scale(1);
+    object-fit: cover;
+}
+
+.container--scale:hover img {
+    transform: scale(0.5);
 }
