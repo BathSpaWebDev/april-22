@@ -2,8 +2,23 @@ body {
     margin: 0;
 }
 
-html {
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a,
+p {
     font-family: 'Libre Franklin', sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 
@@ -14,6 +29,22 @@ html {
 .logo {
     display: flex;
     justify-content: center;
+}
+
+
+/* SECTIONS */
+
+.page-section {
+    padding: 100px 0;
+}
+
+#contact-section {
+    background-color: antiquewhite;
+}
+
+#about-section .container {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 
@@ -71,10 +102,11 @@ html {
 }
 
 
-/* ABOUT SECTION */
+/* FOOTER */
 
-.about__image {
-    background-color: grey;
+footer {
+    background-color: #444;
+    height: 100vh
 }
 
 @media only screen and (min-width: 768px) {
@@ -87,8 +119,25 @@ html {
     .mobile-nav-container.active {
         display: none;
     }
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    #about-section .container {
+        display: flex;
+        flex-direction: row;
+    }
+    .about__image {
+        padding: 15px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
     /* Add styles here later */
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
 }
