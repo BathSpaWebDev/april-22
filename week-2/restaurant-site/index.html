@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza palace</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -20,7 +18,7 @@
 
     <header class="page-header">
         <div class="logo">
-            Logo
+            Pizza Palace
         </div>
 
         <svg onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" id="menu-toggle" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -30,18 +28,18 @@
 
         <div class="mobile-nav-container" id="js-nav">
             <nav class="mobile-nav">
-                <div class="main-nav__menu-item first-div"><a href="index.html">Home</a></div>
-                <div class="main-nav__menu-item"><a href="#about-section">About</a></div>
-                <div class="main-nav__menu-item"><a href="index.html">Menu</a></div>
-                <div class="main-nav__menu-item"><a href="index.html">Contact</a></div>
+                <div class="mobile-nav__menu-item first-div"><a href="#">Home</a></div>
+                <div class="mobile-nav__menu-item"><a href="#about-section">About</a></div>
+                <div class="mobile-nav__menu-item"><a href="#menu-section">Menu</a></div>
+                <div class="mobile-nav__menu-item"><a href="#contact-section">Contact</a></div>
             </nav>
         </div>
 
         <nav class="main-nav">
-            <div class="main-nav__menu-item first-div"><a href="index.html">Home</a></div>
+            <div class="main-nav__menu-item"><a href="#">Home</a></div>
             <div class="main-nav__menu-item"><a href="#about-section">About</a></div>
-            <div class="main-nav__menu-item"><a href="index.html">Menu</a></div>
-            <div class="main-nav__menu-item"><a href="index.html">Contact</a></div>
+            <div class="main-nav__menu-item"><a href="#menu-section">Menu</a></div>
+            <div class="main-nav__menu-item"><a href="#contact-section">Contact</a></div>
         </nav>
     </header>
     <main>
@@ -75,12 +73,116 @@
 
         </section>
 
+        <section class="page-section" id="menu-section">
+
+            <div class="container">
+                <h2>Our pizzas</h2>
+                <div class="menu-section__grid">
+                    <div class="col">
+                        <div class="menu-section__pizza">
+                            <h3>Spicy pepperoni</h3>
+                            <!-- <p>Lorem ipsum dolor sit.</p> -->
+                        </div>
+                        <div class="menu-section__pizza">
+                            <h3>Hawaiian</h3>
+                            <!-- <p>Lorem ipsum dolor sit.</p> -->
+                        </div>
+                        <div class="menu-section__pizza">
+                            <h3>Fiorentina</h3>
+                            <!-- <p>Lorem ipsum dolor sit.</p> -->
+                        </div>
+                        <div class="menu-section__pizza">
+                            <h3>Napolitana</h3>
+                            <!-- <p>Lorem ipsum dolor sit.</p> -->
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="menu-section__pizza">
+                            <h3>Vegetarian</h3>
+                            <!-- <p>Lorem ipsum dolor sit.</p> -->
+                        </div>
+                        <div class="menu-section__pizza">
+                            <h3>Meat feast</h3>
+                            <!-- <p>Lorem ipsum dolor sit.</p> -->
+                        </div>
+                        <div class="menu-section__pizza">
+                            <h3>Quattro formaggi</h3>
+                            <!-- <p>Lorem ipsum dolor sit.</p> -->
+                        </div>
+                        <div class="menu-section__pizza">
+                            <h3>Tuna</h3>
+                            <!-- <p>Lorem ipsum dolor sit.</p> -->
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+                        <div class="menu-section__pizza">
+                            <h3>Rustica</h3>
+                            <!-- <p>Lorem ipsum dolor sit.</p> -->
+                        </div>
+                        <div class="menu-section__pizza">
+                            <h3>St Louis style</h3>
+                            <!-- <p>Lorem ipsum dolor sit.</p> -->
+                        </div>
+                        <div class="menu-section__pizza">
+                            <h3>Genovese</h3>
+                            <!-- <p>Lorem ipsum dolor sit.</p> -->
+                        </div>
+                        <div class="menu-section__pizza">
+                            <h3>Margherita</h3>
+                            <!-- <p>Lorem ipsum dolor sit.</p> -->
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
 
         <section class="page-section" id="contact-section">
 
             <div class="container">
-                <h2>Contact</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vero eaque iste nam sequi quod ipsum repellendus laboriosam sint quas animi molestiae officiis similique rem, rerum odit perspiciatis, aliquid quidem.</p>
+
+                <div class="contact-section__grid">
+                    <div class="col">
+                        <h2>Contact</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vero eaque iste nam sequi quod ipsum repellendus laboriosam sint quas animi molestiae officiis similique rem, rerum odit perspiciatis, aliquid quidem.</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79561.35542337697!2d-2.7383446835937924!3d51.4527885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48718dd7a8ad0edb%3A0x3c205ae9428069b0!2sPizza%20Palace!5e0!3m2!1sen!2suk!4v1651768761293!5m2!1sen!2suk"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col col--booking">
+                        <h2>Book now</h2>
+                        <form action="">
+                            <div class="form-row">
+                                <label for="fname">First name</label>
+                                <input type="text" id="fname">
+                            </div>
+                            <div class="form-row">
+                                <label for="sname">Surname</label>
+                                <input type="text" id="sname">
+                            </div>
+                            <div class="form-row">
+                                <label for="email">Email</label>
+                                <input type="email" id="email">
+                            </div>
+                            <div class="form-row">
+                                <label for="people">How many people</label>
+                                <input type="number" id="people">
+                            </div>
+                            <button type="submit">Book table</button>
+                        </form>
+
+
+                    </div>
+                </div>
+
+
             </div>
 
         </section>
@@ -89,8 +191,14 @@
     <footer>
         <div class="container">
             <div class="contact">
-                <h3>Contact</h3>
-                <a href="tel:07655088779">+44 7655 088779</a>
+                <p>
+                    <span>Tel: </span>
+                    <a href="tel:07655088779">+44 7655 088779</a>
+                </p>
+                <p>
+                    <span>Email: </span>
+                    <a href="mailto:info@pizzapalace.com">info@pizzapalace.com</a>
+                </p>
             </div>
             <div class="social-media">
                 <div class="twitter">
@@ -100,6 +208,11 @@
                 <div class="facebook">
                     <i class="devicon-facebook-original"></i>
                 </div>
+
+                <div class="pizza">
+                    <img width="40" src="images/pizza.png" alt="Pizza logo">
+                </div>
+
             </div>
         </div>
 
