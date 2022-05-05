@@ -95,6 +95,7 @@ p {
     background-image: url(../images/hero.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .hero__inner {
@@ -106,7 +107,48 @@ p {
 
 footer {
     background-color: #444;
-    height: 100vh
+    padding: 100px 0;
+}
+
+footer,
+footer .social-media i,
+footer .contact a {
+    color: #fff;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.devicon-twitter-original {
+    font-size: 4rem;
+    transition: 2s linear;
+}
+
+.twitter {
+    /* transition: transform 0.2s linear; */
+    animation: 2s infinite spinning;
+}
+
+
+/* .twitter:hover {
+    transform: rotate(360deg);
+} */
+
+
+/* Animations */
+
+@keyframes spinning {
+    0% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(120deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @media only screen and (min-width: 768px) {
