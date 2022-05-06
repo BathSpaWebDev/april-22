@@ -100,10 +100,15 @@ button:hover {
 
 .contact-section__grid {
     display: flex;
+    flex-direction: column;
 }
 
 .contact-section__grid .col {
-    flex: 50%;
+    flex: 100%;
+}
+
+.contact-section__grid .col iframe {
+    max-width: 100%;
 }
 
 .contact-section__grid form {
@@ -112,7 +117,7 @@ button:hover {
 }
 
 .col--booking {
-    padding: 0 2rem;
+    padding: 0;
 }
 
 .col--booking form {
@@ -243,11 +248,13 @@ footer .contact a {
 
 footer .container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 footer .social-media {
     display: flex;
+    margin-top: 2rem;
 }
 
 footer .social-media div {
@@ -303,6 +310,21 @@ footer .social-media div {
     }
     .about__image {
         padding: 1rem;
+    }
+    .contact-section__grid {
+        flex-direction: row;
+    }
+    .contact-section__grid .col {
+        flex: 100%;
+    }
+    .col--booking {
+        padding: 0 2rem;
+    }
+    footer .container {
+        flex-direction: row;
+    }
+    footer .social-media {
+        margin-top: 0;
     }
 }
 
