@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>Javascript script demo</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus quisquam voluptatum maiores et necessitatibus culpa, hic, optio dignissimos enim consequatur ipsum, ducimus doloremque ea neque inventore suscipit. Repudiandae, reiciendis suscipit.</p>
+
+    <div id="box">Example</div>
+
+    <p id="text"></p>
+    <p id="text"></p>
+
+    <script>
+        function calculateSomething(x, y, z) {
+            const output = (x + y) / z;
+            return output;
+        }
+
+        const result = calculateSomething(5, 7, 10);
+        const result2 = calculateSomething(45, 34, 45);
+
+        const box = document.getElementById('box');
+        const para = document.getElementById('text');
+
+        console.log(result);
+        box.innerHTML = 'There answer is:' + result;
+        para.innerHTML = 'There answer is:' + result2;
+    </script>
+
+</body>
+
+</html>
