@@ -123,17 +123,6 @@ This is a true or false value. No need to use single quotes.
 
 
 
-
-## TASK
-
-Store the number of countries in the UK in a variable, and the variable a relevant name.
-
-Store the number of states in the US is a vaiable.
-
-Create a variable called totalRegions that stores the sum of bot the previous variables.
-
-Either console.log this, or use innerHTML to insert into the box we created.
-
 ## Functions
 
 A JavaScript function is a block of code designed to perform a particular task.
@@ -178,7 +167,7 @@ It will look something like this:
 
 ```
 function getName(firstName, surName) {
-    return firstName + surName;
+    return firstName + ' ' + surName;
 }
 const name1 = getName('Marlon', 'Brando');
 const name2 = getName('Sidney', 'Poitier');
@@ -188,15 +177,17 @@ console.log(name2);
 
 # Homework 2
 
-Stretch challenge (this one is a bit more challenging, ddon't worry if you can't do it.)
+**Stretch challenge** (this one is a bit more challenging, don't worry if you can't do it.)
 
 In physics you can calculate the speed of something by appyling this formula:
 
-Speed equals distance divided by time.
+_Speed equals distance divided by time._
 
-Create a function that calculates the speed of an object. This function will accept two parameters ( distance and timeTaken ).
+Create a function that calculates the speed of an object. This function will accept **two parameters** ( distance and timeTaken).
 
 The function should return the speed.
+
+Remember you pass the values for speed and time when you **call** the function. Read over and over this (page)[https://www.w3schools.com/js/js_functions.asp]. 
 
 Do something with the output (either console.log or use .innerHTML on a page element to add it to your html page)
 
