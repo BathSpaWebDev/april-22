@@ -187,7 +187,7 @@ Create a function that calculates the speed of an object. This function will acc
 
 The function should return the speed.
 
-Remember you pass the values for speed and time when you **call** the function. Read over and over this (page)[https://www.w3schools.com/js/js_functions.asp]. 
+Remember you pass in the actual values for speed and time when you **call** the function. Read over and over this (page)[https://www.w3schools.com/js/js_functions.asp]. 
 
 Do something with the output (either console.log or use .innerHTML on a page element to add it to your html page)
 
