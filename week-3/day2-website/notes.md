@@ -1,21 +1,6 @@
 ## Object data types
 
-## Importing an external js script
-
-You can import an external script by including it at the end of (but inside) the <head> tag. If you do it this way you should use the keyword **defer** so it loads at the end of the HTML.
-
-The script tage should look like this:
-`<script src="script.js" type="text/javascript" defer></script>`
-
-Alternatively you can include the script, without defer, at the bottom of the body like this:
-
-`<script src="script.js" type="text/javascript"></script>`
-
-Notethat the src attribute must match the relative path to the script.js file where you are writing your javascript.
-
-### Object
-
-syntax:
+syntax to store an object in a variable:
 ```
 let object = {
   property: value,
