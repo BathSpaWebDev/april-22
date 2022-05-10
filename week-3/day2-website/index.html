@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Name goes below:</h1>
+    <p id="demo"></p>
+
+    <script>
+        function addTwoNumbers(a, b) {
+            const sum = a + b;
+
+            if (sum < 20) {
+                return sum;
+            } else if (sum > 20 && sum < 40) {
+                return 'Number is more than 20 but less than 40';
+            } else {
+                // no nothing
+            }
+
+        }
+
+        /*
+        Create a function that multiples two numbers.Create
+        If the number is more than 15 return the number. 
+        If the number is less than 15 return  a string 
+        saying "Number is less than 15".
+        */
+
+
+        const returnedNumber = addTwoNumbers(20, 6);
+
+        // function createName(firstName, secondName) {
+        //     /* function adds first name and second 
+        //     together to return the fullname. */
+
+        //     if (firstName === "Mike") {
+        //         //only does code if condition is met
+        //         alert('First name is Mike');
+        //     } else {
+        //         alert('this is not mike');
+        //     }
+
+        //     return firstName + ' ' + secondName;
+        // }
+        // const fullName = createName('Tony', 'Tyson');
+
+
+        document.getElementById('demo').innerHTML = returnedNumber;
+    </script>
+</body>
+
+</html>

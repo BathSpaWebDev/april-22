@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using constructor functions</title>
+</head>
+
+<body>
+
+    <form class="create-car" onsubmit="submitForm(event)">
+        <div class="form-row">
+            <label for="brand">Brand:</label>
+            <input type="text" id="brand" name="brand" required>
+        </div>
+        <div class="form-row">
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" required>
+        </div>
+        <div class="form-row">
+            <label for="engineType">Engine type:</label>
+            <input type="text" id="engineType" name="engineType" required>
+        </div>
+        <div class="form-row">
+            <label for="doors">Number of doors:</label>
+            <input type="number" id="doors" name="doors" required>
+        </div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <div id="carbox"></div>
+
+
+
+    <script>
+        function Car(
+            brand,
+            model,
+            engineType,
+            doors
+        ) {
+            this.brand = brand;
+            this.model = model;
+            this.engineType = engineType;
+            this.doors = doors;
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+
+            const brand = document.getElementById('brand').value;
+            const model = document.getElementById('model').value;
+            const engineType = document.getElementById('engineType').value;
+            const doors = document.getElementById('doors').value;
+
+            // get the values from the inputs and create an object with these values
+            const carCreated = new Car(brand, model, engineType, doors);
+
+            const brandParagraph = document.createElement('p');
+            const modelParagraph = document.createElement('p');
+            const etParagraph = document.createElement('p');
+            const doorsParagraph = document.createElement('p');
+
+            brandParagraph.innerHTML = brand;
+            modelParagraph.innerHTML = model;
+            etParagraph.innerHTML = engineType;
+            doorsParagraph.innerHTML = doors;
+
+            document.getElementById('carbox').appendChild(brandParagraph);
+            document.getElementById('carbox').appendChild(modelParagraph);
+            document.getElementById('carbox').appendChild(etParagraph);
+            document.getElementById('carbox').appendChild(doorsParagraph);
+
+        }
+
+        // These are instances of an object
+        // const BMW = new Car('BMW', '5', 'Petrol', 2);
+        // const Volvo = new Car('Volvo', 'x50', 'Diesel', 4);
+
+        // let text = '';
+        // text += 'First car is ' + BMW.brand + ' ' + BMW.model + '<br>';
+        // text += 'Second car is ' + Volvo.brand + ' ' + Volvo.model + '<br>';
+
+        // document.getElementById('carbox').innerHTML = text;
+    </script>
+</body>
+
+</html>
