@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+
+    <p id="demo"></p>
+    <script>
+        const fruits = ['Orange', 'Banana', 'Apple', 'Pear', 'Strawberry'];
+        let text = '';
+
+        for (let i = 0; i < fruits.length; i++) {
+            // do something
+            console.log(fruits[i]);
+            text += '<ul>';
+            text += '<li>' + fruits[i] + '</li>';
+            text += '</ul>';
+        }
+
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</body>
+
+</html>
