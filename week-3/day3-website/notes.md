@@ -1,3 +1,5 @@
+# Challenges
+
 ### The Lifetime Supply Calculator
 
 Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no more!
